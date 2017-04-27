@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>DataStoreDemo</servlet-name>
+		<servlet-class>com.full.datastore.DataStoreDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DataStoreDemo</servlet-name>
+		<url-pattern>/datastoredemo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DetailsServlet</servlet-name>
+		<servlet-class>com.full.datastore.DetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailsServlet</servlet-name>
+		<url-pattern>/detailsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>QuestionsServlet</servlet-name>
+		<servlet-class>com.full.datastore.QuestionsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionsServlet</servlet-name>
+		<url-pattern>/questionsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AnswerServlet</servlet-name>
+		<servlet-class>com.full.datastore.AnswerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AnswerServlet</servlet-name>
+		<url-pattern>/answerServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AnswerQIdServlet</servlet-name>
+		<servlet-class>com.full.datastore.AnswerQIdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AnswerQIdServlet</servlet-name>
+		<url-pattern>/answerQId</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SeachServlet</servlet-name>
+		<servlet-class>com.full.datastore.SeachServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SeachServlet</servlet-name>
+		<url-pattern>/searchServlet</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>Main.html</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>Think Learn Share</title>
+</head>
+<body bg_color="black" id="body">
+	<center>
+		<h2>
+			<i>Think Learn Share</i>
+		</h2>
+		<header>
+			<i>
+				<nav id="nav">
+					
+		     		<input type="submit" value="Questions"	onclick="questions()" >
+					<input type="button" value="SignUp" onclick="signup()">
+				    <input type="button" value="SignIn" onclick="signIn()"> 
+					<input	type="button" value="Search" onclick="search()">
+				
+				
+					<!-- <a href="questionsServlet">Questions</a>
+<a href="index.html">Sign Up</a>
+<a href="login.html">SignIn</a>
+<a href="seach.html">Search</a></i> -->
+				</nav>
+		</header>
+
+	</center>
+	<style>
+body {
+	background-color: black;
+	color: white;
+}
+
+nav a {
+	font-size: 22px;
+	padding: 15px 30px;
+	color: white;
+	text-color: black;
+	text-decoration: none; //
+	margin-left: 180px;
+	border: 1px solid black;
+	border-radius: 30px;
+}
+
+nav a:hover {
+	background: lightcoral;
+}
+
+h2 {
+	color: lightcoral;
+}
+</style>
+</body>
+<script>
+	function signIn() {
+		window.location.href="/login.html";
+		/* xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "/login.html");
+		xmlHttp.send();
+		xmlHttp.onreadystatechange = function() {
+			if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+				document.getElementById("body").innerHTML = xmlHttp.responseText;
+			}
+		}; */
+	}
+	function signup() {
+		window.location.href="/signUp.html";
+		/* xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "/index.html");
+		xmlHttp.send();
+		xmlHttp.onreadystatechange = function() {
+			if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+				document.getElementById("body").innerHTML = xmlHttp.responseText;
+			}
+		}; */
+	}
+	function questions() {
+		window.location.href="/questionsServlet";
+		/* xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "/questionsServlet");
+		xmlHttp.send();
+		xmlHttp.onreadystatechange = function() {
+			if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+				document.getElementById("body").innerHTML = xmlHttp.responseText;
+			}
+		}; */
+	}
+	function search() {
+		window.location.href="/seach.html";
+		/* xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "/seach.html");
+		xmlHttp.send();
+		xmlHttp.onreadystatechange = function() {
+			if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+				document.getElementById("body").innerHTML = xmlHttp.responseText;
+			}
+		}; */
+	}
+</script>
+
+</html>

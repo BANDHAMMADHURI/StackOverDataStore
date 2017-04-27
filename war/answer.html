@@ -1,0 +1,31 @@
+<html>
+<head><title>Answers</title></head>
+<body>
+
+<!-- <form name="show" action="answerServlet" method="get"> -->
+<div id="show">
+<input type="button" value="show question_List"  onclick="retrieveData();hide()">
+</div>
+
+<form name="answerForm" action="answerServlet" method="post"><br>
+Question Id :<input type="text" name="question_Id" value="" id="question_Id">
+Answer : <input type="text" name="answer" id="answer">
+<input type="submit" name="submit">
+</form>
+</body>
+ <script>
+	function hide() {
+		document.getElementById("button").style.visibility = "hidden";
+	}
+	function retrieveData() {
+		xmlHttp = new XMLHttpRequest();
+		xmlHttp.open("GET", "/answerServlet");
+		xmlHttp.send();
+		xmlHttp.onreadystatechange = function() {
+			if ((xmlHttp.readyState == 4) && (xmlHttp.status == 200)) {
+				document.getElementById("show").innerHTML = xmlHttp.responseText;
+			}
+		};
+	}
+</script> 
+</html>
